@@ -1,0 +1,639 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    {% block body %}
+        <!--// Main Wrapper \\-->
+        <div class="wm-main-wrapper">
+
+            {% include 'header.html' %}
+
+            <!--// Main Banner \\-->
+            <div class="wm-banner">
+
+                <div class="wm-banner-wrap">
+                    <!-- /* <span class="wm-transparent-layer"></span>
+{#                    <img src="{% static 'extra-images/banner-1.jpg' %}" alt="">#} */ -->
+                    <img src="{% static 'extra-images/tools-plan.jpg' %}" alt="">
+                    <!--// Listing Search \\-->
+                    <form class="wm-listing-search">
+                        <div class="wm-caption">
+                            <h1>Pronađi majstora danas</h1>
+                            <p>Najveći registar majstora u Crnoj Gori</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+{#                                    <li><input type="text" value="Keyword" onblur="if(this.value == '') { this.value ='Keyword'; }" onfocus="if(this.value =='Keyword') { this.value = ''; }"> <i class="fa fa-search"></i></li>#}
+{#                                    <li><input type="text" value="Location" onblur="if(this.value == '') { this.value ='Location'; }" onfocus="if(this.value =='Location') { this.value = ''; }"> <i class="fa fa-map-marker"></i></li>#}
+{#                                    <li><input type="text" value="Category" onblur="if(this.value == '') { this.value ='Category'; }" onfocus="if(this.value =='Category') { this.value = ''; }"> <i class="fa fa-folder-open"></i></li>#}
+                                    <li class="col-md-4"><div class="ec-select-two"> <select> <option>Kategorija</option> <option>Property One</option> <option>Property Two</option> <option>Property Three</option> </select> </div></li>
+                                    <li class="col-md-4"><div class="ec-select-two"> <select> <option>Zanimanje</option> <option>Property One</option> <option>Property Two</option> <option>Property Three</option> </select> </div></li>
+                                    <li class="col-md-4"><div class="ec-select-two"> <select> <option>Grad</option> <option>Property One</option> <option>Property Two</option> <option>Property Three</option> </select> </div></li>
+                                    <li class="col-md-4"><input class="ip-search" type="submit" value="Pretraži"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <!--// Listing Search \\-->
+                </div>
+
+            </div>
+            <!--// Main Banner \\-->
+
+            <!--// Main Content \\-->
+            <div class="wm-main-content">
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-listing-full">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="row">
+                                <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Pregled kategorija</h2>
+                                        <p>Potražite zanimanje u nekoj od ovih kategorija</p>
+                                    </div>
+                                </div>
+                                <!--// Fancy Title \\-->
+
+                                <!--// Recent Listing Grid \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-listing wm-recent-listing">
+                                        <ul class="row">
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-screwdriver.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Elektrika</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $450,000</li>
+                                                        <li><i class="flaticon-rest"></i> 2 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 2 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,582 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-helmet.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="profession_category.html">Građevinski radovi</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $1,250,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,93 sqft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-settings.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Održavanje</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $249,000</li>
+                                                        <li><i class="flaticon-rest"></i> 3 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 2 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,008 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-wrench.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Cijevne instalacije</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $167,000</li>
+                                                        <li><i class="flaticon-rest"></i> 5 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 3 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 2,633 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-saw.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Obrada materijala</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $388,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 2 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 2,844 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-wrench-1.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Održavanje vozila</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-broom.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Održavanje prostora</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-wrench-2.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Automehaničari</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-saw-1.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Stolari</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-plunger.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Vodoinstalaterske usluge</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-shovel.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Bastovanaske usluge</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-2">
+                                                <figure><a href="listing-detail.html"><img src="{% static 'icons/031-trowel.png' %}" alt=""></a>
+                                                    <figcaption>
+                                                        <div class="wm-listing-tag"><a class="wm-bgcolor" href="listing-detail.html">Zidarski radovi</a></div>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="wm-listing-options-text">
+                                                    <ul>
+                                                        <li><i class="flaticon-tag"></i> $298,000</li>
+                                                        <li><i class="flaticon-rest"></i> 4 beds</li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-medical"></i> 1 baths</a></li>
+                                                        <li><a href="listing-detail.html" class="wm-colorhover"><i class="flaticon-school"></i> 1,004 sq ft</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// Recent Listing Grid \\-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-categories-full">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="row">
+                                <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Najtraženiji majstori</h2>
+                                        <p>Pogledajte listu najtraženijih majstora</p>
+                                    </div>
+                                </div>
+                                <!--// Fancy Title \\-->
+                                <div class="wm-extra-spacer"></div>
+
+                                <!--// Categories \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-categorie-list">
+                                        <ul class="row">
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Petar Janković</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Automehaničar</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>068435884</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>10.00</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Darko Ivanović</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Čistač</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>067334422</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>09.59</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Milan Kovačević</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Baštovan</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>068435884</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>10.00</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Špiro Mugoša</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Električar</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>067884433</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>09.69</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Ivan Marković</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Vulkanizer</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>079123443</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>10.00</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-categorie-list-wrap">
+                                                    <i class="wm-bgcolor flaticon-interface"></i>
+                                                    <h6>Željko Uzelac</h6>
+                                                    <ul>
+                                                        <li><a href="pricing-plans.html">Zanimanje</a> <span>Serviser mobilnih telefona</span></li>
+                                                        <li><a href="pricing-plans.html">Broj telefona</a> <span>068773322</span></li>
+                                                        <li><a href="pricing-plans.html">Ocjena</a> <span>10.00</span></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// Categories \\-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-priceplans-full">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row">
+                                <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Paketi za majstore</h2>
+                                        <p>Izaberite neki od ponuđenih paketa plaćanja</p>
+                                    </div>
+                                </div>
+                                <!--// Fancy Title \\-->
+
+                                <!--// Price Plans \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-priceplans-style-two">
+                                        <ul class="row">
+                                            <li class="col-md-4">
+                                                <div class="wm-priceplans-wrap">
+                                                    <div class="wm-price-title">
+                                                        <h2>Osnovni</h2>
+                                                        <small>173 <br> korisnika</small>
+                                                    </div>
+                                                    <div class="wm-price-storage">
+                                                        <div class="wm-price-sec">€5 <span>/mjesečno</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wm-price-bottom">
+                                                    <p>6 mjeseci besplatno</p>
+                                                    <div class="wm-priceplane-btn"><a href="404-page.html" class="wm-btn-style1 wm-bgcolor">Odaberite</a></div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-priceplans-wrap">
+                                                    <div class="wm-price-title">
+                                                        <h2>Standard</h2>
+                                                        <small>92 <br> korisnika</small>
+                                                    </div>
+                                                    <div class="wm-price-storage">
+                                                        <div class="wm-price-sec">€15 <span>/mjesečno</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wm-price-bottom">
+                                                    <p>12 mjeseci besplatno</p>
+                                                    <div class="wm-priceplane-btn"><a href="404-page.html" class="wm-btn-style1 wm-bgcolor">Odaberite</a></div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-4">
+                                                <div class="wm-priceplans-wrap">
+                                                    <div class="wm-price-title">
+                                                        <h2>Premium</h2>
+                                                        <small>23 <br> Korisnika</small>
+                                                    </div>
+                                                    <div class="wm-price-storage">
+                                                        <div class="wm-price-sec">€129 <span>/godišnje</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                        <li>Smisliti sadržaj</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wm-price-bottom">
+                                                    <p>12 mjeseci besplatno</p>
+                                                    <div class="wm-priceplane-btn"><a href="404-page.html" class="wm-btn-style1 wm-bgcolor">Odaberite</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// Price Plans \\-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-partner-listtwo-full">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row">
+
+                                <!--// Partner \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-partner-list">
+                                        <ul>
+                                            <li><a href="404-page.html"><img class="wm-grayscale" src="{% static 'extra-images/partner-logo-1.png' %}" alt=""></a></li>
+                                            <li><a href="404-page.html"><img class="wm-grayscale" src="{% static 'extra-images/partner-logo-2.png' %}" alt=""></a></li>
+                                            <li><a href="404-page.html"><img class="wm-grayscale" src="{% static 'extra-images/partner-logo-3.png' %}" alt=""></a></li>
+                                            <li><a href="404-page.html"><img class="wm-grayscale" src="{% static 'extra-images/partner-logo-4.png' %}" alt=""></a></li>
+                                            <li><a href="404-page.html"><img class="wm-grayscale" src="{% static 'extra-images/partner-logo-5.png' %}" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// Partner \\-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-testimonial-list-full">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row">
+
+                                <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Pohvalnica</h2>
+                                        <p>Evo šta korisnici i majstori misle o našem servisu.</p>
+                                    </div>
+                                </div>
+                                <!--// Fancy Title \\-->
+
+                                <!--// Testimonial List \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-testimonial-list">
+                                        <ul>
+                                            <li>
+                                                <figure><a href="testimonials.html"><img src="{% static 'extra-images/warehouse2.jpg' %}" alt=""></a></figure>
+                                                <div class="wm-testimonial-info">
+                                                    <h2><a href="testimonials.html">Darko Mitrović</a></h2>
+                                                    <span>Električar</span>
+                                                    <p>“Zahvaljujući ovom sajtu moj posao se utrostručio. Znam da ovo zvuči kao reklama sa Teleshop-a ali ja sam ozbiljan!”</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <figure><a href="testimonials.html"><img src="{% static 'extra-images/phoning.jpg' %}" alt=""></a></figure>
+                                                <div class="wm-testimonial-info">
+                                                    <h2><a href="testimonials.html">Bobi Jovanović</a></h2>
+                                                    <span>Korisnik usluge</span>
+                                                    <p>“Za samo par klikova sam veoma brzo i jednostavno pronašao majstora koji mi je bio potreban, a inače bih gubio puno vremena na prikupljanju informacija i brojeva telefona.”</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <figure><a href="testimonials.html"><img src="{% static 'extra-images/chef.jpg' %}" alt=""></a></figure>
+                                                <div class="wm-testimonial-info">
+                                                    <h2><a href="testimonials.html">Mitar Nikolić</a></h2>
+                                                    <span>Sef kuhinje</span>
+                                                    <p>“Ovo je najbolji sajt koji sam vidio u životu. Sve pohvale za ideju!”</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// Testimonial List \\-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-newslatter-full">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="row">
+                                <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Ne propustite priliku</h2>
+                                        <p>Prijavi se na naš newsletter i ugrabi jedinstvene ponude majstora. Saznaj za nove usluge, popuste i ponude prije svih!</p>
+                                    </div>
+                                </div>
+                                <!--// Fancy Title \\-->
+
+                                <!--// NewsLatter \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-newsletter">
+                                        <form class="wm-newsletter-wrap">
+                                            <input type="text" value="Unesite vašu mejl adresu" onblur="if(this.value == '') { this.value ='Enter your email address'; }" onfocus="if(this.value =='Enter your email address') { this.value = ''; }">
+                                            <input type="submit" value="Prijavi se" class="wm-bgcolor">
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--// NewsLatter \\-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+            </div>
+            <!--// Main Content \\-->
+
+            <!--// Footer \\-->
+            {% include 'footer.html' %}
+        </div>
+        <!--// Main Wrapper \\-->
+    {% endblock %}
+
+    {% block modals %}
+        <div class="modal fade" id="myModalsix" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>User Login</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li></li>
+		      			<li> <label><input type="checkbox"> Remember Password </label> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Login">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Forget Your Password">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	    <div class="modal fade" id="myModalseven" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>Register</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>First Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Last Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Confirm Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Register Now">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+    {% endblock %}

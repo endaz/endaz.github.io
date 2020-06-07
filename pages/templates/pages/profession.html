@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    {% block body %}
+        <!--// Main Wrapper \\-->
+        <div class="wm-main-wrapper">
+
+{#            {% include 'header.html' %}#}
+
+        <!--// Sub Header \\-->
+            <div class="wm-mini-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="wm-breadcrumb">
+                                <li><a href="/">Početna</a></li>
+                                <li>Građevinski radovi</li>
+                                <li>Armirač</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<!--// Sub Header \\-->
+
+		<!--// Main Content \\-->
+            <div class="wm-main-content">
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-searchlisting-sidebar">
+                    <div class="container">
+                        <div class="row">
+                           <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Armirači</h2>
+                                        <p>Armirači su majstori zaduženi za obradu armature, savijanje armature, sečenje armature, povezivanje armature i sve ostale poslove vezane za armiranje betona. Armirani beton ili stub je daleko izdržljiviji od običnog.</p>
+                                    </div>
+                                </div>
+                            <!--// Fancy Title \\-->
+                            <div class="col-md-8">
+                                <div class="ec-table">
+                                    <ul class="ec-table-head">
+                                        <li>Ime i Prezime</li>
+                                        <li>Broj telefona</li>
+                                        <li>Prebivalište</li>
+                                    </ul>
+                                    <div class="ec-table-content">
+                                        <ul>
+                                            <li><a href="#">Marko Marković</a></li>
+                                            <li>068/668-391</li>
+                                            <li>Podgorica</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Jovan Matković</a></li>
+                                            <li>063/545-661</li>
+                                            <li>Podgorica</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Petar Vuković</a></li>
+                                            <li>063/221-443</li>
+                                            <li>Budva</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Dragan Jovanović</a></li>
+                                            <li>067/555-333</li>
+                                            <li>Cetinje</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Petar Mugoša</a></li>
+                                            <li>067/333-222</li>
+                                            <li>Kolašin</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Nikola Luković</a></li>
+                                            <li>067/321-123</li>
+                                            <li>Herceg Novi</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Sead Šehović</a></li>
+                                            <li>067/000-021</li>
+                                            <li>Ulcinj</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Janko Branković</a></li>
+                                            <li>067/000-021</li>
+                                            <li>Bar</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Darko Branković</a></li>
+                                            <li>067/000-021</li>
+                                            <li>Podgorica</li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Filip Marković</a></li>
+                                            <li>067/111-222</li>
+                                            <li>Rožaje</li>
+                                        </ul>
+                                    </div>
+                                    <div class="wm-pagination-wrap">
+                                        <ul class="wm-pagination">
+                                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li class="active"><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+	                                </div>
+                                </div>
+                            </div>
+                            <aside class="col-md-4">
+                                <div class="widget wm-searching-widget">
+                                    <div class="wm-widget-listing-heading">
+                                        <h2>Pretraga</h2>
+                                        <p>Filtriranje po uslugama:</p>
+                                    </div>
+                                     <form class="wm-form-widget">
+                                          <ul class="wm-form-widget-wrap">
+                                            <li>
+                                              <input type="text" onfocus="if(this.value =='Keywords') { this.value = ''; }" onblur="if(this.value == '') { this.value ='Keywords'; }" value="Keywords">
+                                            </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Location</option>
+                                                        <option>London</option>
+                                                        <option>Australia</option>
+                                                        <option>UK</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Proerty status</option>
+                                                        <option>London</option>
+                                                        <option>Australia</option>
+                                                        <option>UK</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Property type</option>
+                                                        <option>London</option>
+                                                        <option>Australia</option>
+                                                        <option>UK</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Bedrooms</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Bathroom</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Garrage</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Radius</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                   <input type="submit" value="Search">
+                                              </li>
+                                          </ul>
+                                          <div class="wm-select-checkbox">
+                                               <h3><a href="#">Advanced Search</a></h3>
+                                               <ul>
+                                                    <li>
+                                                      <input type="checkbox" id="c1" name="ca">
+                                                      <label for="c1"><span></span>Parking</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c2" name="ca">
+                                                      <label for="c2"><span></span>Wi-Fi</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c3" name="ca">
+                                                      <label for="c3"><span></span>Cable TV</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c4" name="ca">
+                                                      <label for="c4"><span></span>Bolcony</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c5" name="ca">
+                                                      <label for="c5"><span></span>Microwave</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c6" name="ca">
+                                                      <label for="c6"><span></span>Tea Pot</label>
+                                                    </li>
+                                               </ul>
+                                            </div>
+                                     </form>
+                                </div>
+
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+            </div>
+
+            <!--// Footer \\-->
+            {% include 'footer.html' %}
+        </div>
+        <!--// Main Wrapper \\-->
+    {% endblock %}
+
+    {% block modals %}
+        <div class="modal fade" id="myModalsix" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>User Login</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li></li>
+		      			<li> <label><input type="checkbox"> Remember Password </label> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Login">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Forget Your Password">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	    <div class="modal fade" id="myModalseven" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>Register</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>First Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Last Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Confirm Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Register Now">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+    {% endblock %}

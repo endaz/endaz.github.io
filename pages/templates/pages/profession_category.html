@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    {% block body %}
+        <!--// Main Wrapper \\-->
+        <div class="wm-main-wrapper">
+
+{#            {% include 'header.html' %}#}
+
+        <!--// Sub Header \\-->
+            <div class="wm-mini-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="wm-breadcrumb">
+                                <li><a href="/">Početna</a></li>
+                                <li>Građevinski radovi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<!--// Sub Header \\-->
+
+		<!--// Main Content \\-->
+            <div class="wm-main-content">
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-searchlisting-sidebar">
+                    <div class="container">
+                        <div class="row">
+                           <!--// Fancy Title \\-->
+                                <div class="col-md-12">
+                                    <div class="wm-fancy-title">
+                                        <h2>Građevinski radovi</h2>
+                                        <p>U kategoriji Građevinski radovi nalaze se sva ona zanimanja koja se vezuju za izgradnju ili renoviranje nekog objekta.</p>
+                                    </div>
+                                </div>
+                            <!--// Fancy Title \\-->
+                            <div class="col-md-8">
+                                <div class="wm-directory-listing">
+                                    <ul class="row">
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="/zanimanje/">
+                                                        <img src="{% static 'extra-images/armiranje2.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="/zanimanje/">Armirač</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="/zanimanje/">Armirač</a></h3>
+                                                        <p>Armirači su majstori zaduženi za obradu armature, savijanje armature, sečenje armature, povezivanje armature i sve ostale poslove vezane za armiranje betona.</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="{% static 'extra-images/keyhole.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="#">Bravar monter</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="#">Bravar monter</a></h3>
+                                                        <p>Bravari monteri se bave izradom i montiranjem raznih konstrukcija. U bravarske poslove spadaju izrada i montaža nadstrešnice, ograde, kapije, gelendera, letnjikovca, garaža i slično.</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="{% static 'extra-images/varioc.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="#">Varilac</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="#">Varilac</a></h3>
+                                                        <p>Varioci su majstori koji su zaduženi za zavarivanje i obradu metala. Postoje razne tehnika zavarivanja u zavisnosti od materijala i namene.</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="{% static 'extra-images/gips.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="#">Gipsar</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="#">Gipsar</a></h3>
+                                                        <p>Gipsari su majstori koji vrše ugradnju gipsanih ploča, u gipsarske radove spadaju postavljanje gipsanih ploča, spuštanje plafona, pregradni zidovi, izrada šanka...</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="{% static 'extra-images/limar.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="#">Građevinski limar</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="#">Građevinski limar</a></h3>
+                                                        <p>Gradjevinski limari su majstori u čije poslove spadaju izrada i postavljanje oluka, okapnica, vetar lajsni, snegobrana... Angažujte gradjevinskog limara iz naše baze za sve poslove na krovu.</p>
+                                                        </p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="wm-directory-listing-wrap">
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="{% static 'extra-images/zidanje.jpg' %}" alt="">
+                                                    </a>
+                                                    <span class="wm-featured-post"><small><a href="#">Zidar</a></small></span>
+                                               </figure>
+                                               <div class="wm-listing-text-wrap">
+                                                   <div class="wm-directory-listing-text">
+                                                        <h3><a href="#">Zidar</a></h3>
+                                                        <p>Zidari su majstori zaduženi za izgradnju objekta, u zidarske radove još spadaju zidanje kamina i pečenjara, malterisanje, i ostali gradjevinski radovi.</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="wm-pagination-wrap">
+                                    <ul class="wm-pagination">
+                                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <aside class="col-md-4">
+                                <div class="widget wm-searching-widget">
+                                    <div class="wm-widget-listing-heading">
+                                        <h2>Pretraga</h2>
+                                        <p>Filtriranje po uslugama:</p>
+                                    </div>
+                                     <form class="wm-form-widget">
+                                          <ul class="wm-form-widget-wrap">
+                                            <li>
+                                              <input type="text" onfocus="if(this.value =='Ključne reči') { this.value = ''; }" onblur="if(this.value == '') { this.value ='Ključne reči'; }" value="Keywords">
+                                            </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Lokacija</option>
+                                                        <option>Podgorica</option>
+                                                        <option>Berane</option>
+                                                        <option>Budva</option>
+                                                        <option>Herceg Novi</option>
+                                                        <option>Ulcinj</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Kategorija Radova</option>
+                                                        <option>Gradjevinski</option>
+                                                        <option>Molerski</option>
+                                                        <option>Električarski</option>
+                                                        <option>Automehaničarski</option>
+                                                        <option>Održavanje</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <!-- <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Property type</option>
+                                                        <option>London</option>
+                                                        <option>Australia</option>
+                                                        <option>UK</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Bedrooms</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li> -->
+                                              <!-- <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Bathroom</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Garrage</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="wm-select">
+                                                    <select>
+                                                        <option>Radius</option>
+                                                        <option>one</option>
+                                                        <option>two</option>
+                                                        <option>three</option>
+                                                    </select>
+                                                </div>
+                                              </li> -->
+                                              <li>
+                                                   <input type="submit" value="Pretraži">
+                                              </li>
+                                          </ul>
+                                          <div class="wm-select-checkbox">
+                                               <h3><a href="#">Advanced Search</a></h3>
+                                               <ul>
+                                                    <li>
+                                                      <input type="checkbox" id="c1" name="ca">
+                                                      <label for="c1"><span></span>Parking</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c2" name="ca">
+                                                      <label for="c2"><span></span>Wi-Fi</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c3" name="ca">
+                                                      <label for="c3"><span></span>Cable TV</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c4" name="ca">
+                                                      <label for="c4"><span></span>Bolcony</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c5" name="ca">
+                                                      <label for="c5"><span></span>Microwave</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="checkbox" id="c6" name="ca">
+                                                      <label for="c6"><span></span>Tea Pot</label>
+                                                    </li>
+                                               </ul>
+                                            </div>
+                                     </form>
+                                </div>
+
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+            </div>
+
+            <!--// Footer \\-->
+            {% include 'footer.html' %}
+        </div>
+        <!--// Main Wrapper \\-->
+    {% endblock %}
+
+    {% block modals %}
+        <div class="modal fade" id="myModalsix" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>User Login</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li></li>
+		      			<li> <label><input type="checkbox"> Remember Password </label> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Login">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Forget Your Password">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	    <div class="modal fade" id="myModalseven" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>Register</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>First Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Last Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Confirm Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Register Now">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+    {% endblock %}

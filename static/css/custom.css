@@ -1,0 +1,25 @@
+.ip-search{
+    height: 40px;
+    margin-bottom: -35.5px;
+    border-radius: 5px;
+}
+
+.ip-wm-btn-style-three-red {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 12px 40px 0;
+    padding: 7px 22px;
+    text-transform: uppercase;
+}
+.ip-wm-btn-style-three-red:hover {
+    background-color: rgba(255, 25, 33, 0.77);
+}
+.ip-wm-btn-style-three-red i {
+    margin-right: 4px;
+}
+
+.ip-wm-bgcolor-red{
+    background-color: #e0171f;
+}

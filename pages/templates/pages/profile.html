@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    {% block body %}
+        <!--// Main Wrapper \\-->
+        <div class="wm-main-wrapper">
+
+{#            {% include 'header.html' %}#}
+
+        <!--// Sub Header \\-->
+            <div class="wm-mini-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="wm-breadcrumb">
+                                <li><a href="/">Početna</a></li>
+                                <li>Građevinski radovi</li>
+                                <li>Armirač</li>
+                                <li>Marko Marković</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<!--// Sub Header \\-->
+
+		<!--// Main Content \\-->
+            <div class="wm-main-content">
+
+                <!--// Main Section \\-->
+                <div class="wm-main-section wm-searchlisting-sidebar">
+                    <div class="container">
+                        <div class="row">
+                           <!--// Fancy Title \\-->
+							<div class="col-md-12">
+								<div class="wm-fancy-title">
+									<h2>Upoznajte našeg majstora</h2>
+								</div>
+							</div>
+
+                            <div class="col-md-12">
+								<div class="wm-our-team wm-our-team-list">
+									<ul class="row">
+										<li class="col-md-12">
+											<div class="wm-team-wrap">
+												<figure>
+													<a href="404-page.html"><img src="{% static 'extra-images/our-team1.png' %}" alt=""></a>
+												</figure>
+												<div class="wm-our-team-info">
+													<div class="wm-our-team-pinfo">
+														<a href="#" style="color:#22b099">Marko Marković</a>
+														<span>068/668-391</span>
+													</div>
+
+													<div class="wm-our-team-text">
+														<p>Marko je an accomplished Real Estate Broker, CPA and Estate Planner with over 30 years of all those professional experience. Armando has served in a variety of capacities such as Vice President of Finance for specialty retail organizations, a public accountant, and a Board Member of the UACPA.</p>
+													</div>
+
+                                                    <div class="wm-listing-location-heading"> <h3>Usluge koje pruža</h3> </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6 wm-button-style">
+                                                            <a href="#" class="wm-btn-style-three wm-bgcolor"><i class="fa fa-check"></i> Spajanje armature</a>
+                                                            <a href="#" class="wm-btn-style-three wm-bgcolor"><i class="fa fa-check"></i> Izrada armature</a>
+                                                        </div>
+                                                        <div class="col-md-6 wm-button-style">
+                                                            <a href="#" class="ip-wm-btn-style-three-red ip-wm-bgcolor-red"><i class="fa fa-times"></i> Izlivanje betona</a>
+                                                            <a href="#" class="ip-wm-btn-style-three-red ip-wm-bgcolor-red"><i class="fa fa-times"></i> Armiranje betona</a>
+                                                        </div>
+                                                    </div>
+
+												    <div class="clearfix"></div>
+
+                                                    <div class="wm-listing-location-heading"> <h3>Kontakt info</h3> </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="wm-opening-hours wm-opening-info">
+                                                                <ul>
+                                                                    <li><b>Telefon:</b> <span>068/668-391</span></li>
+                                                                    <li><b>Prebivalište:</b><span>Podgorica</span></li>
+                                                                    <li><b>Pokriva područja:</b><span>Podgorica, Danilovgrad, Nikšić</span></li>
+                                                                    <li><b>Email:</b><span>ilija@gmail.com</span></li>
+                                                                    <li><b>Radno vrijeme:</b>
+                                                                        <span style="margin-right: 20px">
+                                                                            <ul>
+                                                                                <li>Ponedjeljak: <span>16:30 - 22:00</span></li>
+                                                                                <li>Utorak: <span>16:30 - 22:00</span></li>
+                                                                                <li>Srijeda: <span>16:30 - 22:00</span></li>
+                                                                                <li>Četvrtak: <span>16:30 - 22:00</span></li>
+                                                                                <li>Petak: <span>16:30 - 22:00</span></li>
+                                                                                <li>Subota: <span>16:30 - 22:00</span></li>
+                                                                                <li>Nedjelja: <span>16:30 - 22:00</span></li>
+                                                                            </ul>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li><b>Cijena:</b><span>5 eura po kvadratu</span></li>
+                                                                </ul>
+                                                            </div>
+									                    </div>
+                                                    </div>
+
+                                                    <div class="clearfix"></div>
+
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+
+            </div>
+
+            <!--// Footer \\-->
+            {% include 'footer.html' %}
+        </div>
+        <!--// Main Wrapper \\-->
+    {% endblock %}
+
+    {% block modals %}
+        <div class="modal fade" id="myModalsix" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>User Login</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li></li>
+		      			<li> <label><input type="checkbox"> Remember Password </label> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Login">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Forget Your Password">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	    <div class="modal fade" id="myModalseven" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<form>
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h6>Register</h6>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="wm-modal-input">
+		      		<ul>
+		      			<li>First Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Last Name</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Email</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      		<ul>
+		      			<li>Confirm Password</li>
+		      			<li> <input type="text"> </li>
+		      		</ul>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <input class="wm-modalbtn wm-bgcolorhover" type="submit" value="Register Now">
+		      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+    {% endblock %}
